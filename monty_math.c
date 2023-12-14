@@ -5,7 +5,7 @@
  * @stack: pointer to lists for monty stack
  * @line_number: number of line opcode occurs on
  */
-void _sub(stack_t **stack, unsigned int line_number)
+void f_sub(stack_t **stack, unsigned int line_number)
 {
 	stack_t *tmp = *stack;
 	int sub = 0, i = 0;
@@ -38,7 +38,7 @@ void _sub(stack_t **stack, unsigned int line_number)
  * @stack: pointer to lists for monty stack
  * @line_number: number of line opcode occurs on
  */
-void _mul(stack_t **stack, unsigned int line_number)
+void f_mul(stack_t **stack, unsigned int line_number)
 {
 	int aux;
 
@@ -63,7 +63,7 @@ void _mul(stack_t **stack, unsigned int line_number)
  * @stack: pointer to lists for monty stack
  * @line_number: number of line opcode occurs on
  */
-void _div(stack_t **stack, unsigned int line_number)
+void f_div(stack_t **stack, unsigned int line_number)
 {
 	int div = 0;
 
@@ -96,7 +96,7 @@ void _div(stack_t **stack, unsigned int line_number)
  * @stack: pointer to lists for monty stack
  * @line_number: number of line opcode occurs on
  */
-void _mod(stack_t **stack, unsigned int line_number)
+void f_mod(stack_t **stack, unsigned int line_number)
 {
 	int mod = 0;
 

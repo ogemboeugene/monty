@@ -5,7 +5,7 @@
  * @stack: pointer to lists for monty stack
  * @line_number: number of line opcode occurs on
  */
-void _pstr(stack_t **stack, unsigned int line_number)
+void f_pstr(stack_t **stack, unsigned int line_number)
 {
 	stack_t *tmp = *stack;
 	int c = 0;
@@ -29,7 +29,7 @@ void _pstr(stack_t **stack, unsigned int line_number)
  * @stack: pointer to lists for monty stack
  * @line_number: number of line opcode occurs on
  */
-void _rotl(stack_t **stack, unsigned int line_number)
+void f_rotl(stack_t **stack, unsigned int line_number)
 {
 	stack_t *runner = *stack;
 
@@ -55,7 +55,7 @@ void _rotl(stack_t **stack, unsigned int line_number)
  * @stack: pointer to lists for monty stack
  * @line_number: number of line opcode occurs on
  */
-void _rotr(stack_t **stack, unsigned int line_number)
+void f_rotr(stack_t **stack, unsigned int line_number)
 {
 	stack_t *runner = *stack;
 

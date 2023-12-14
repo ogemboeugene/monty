@@ -4,7 +4,7 @@
  * @stack: linked lists for monty stack
  * @line_number: number of line opcode occurs on
  */
-void _push(stack_t **stack, __attribute__ ((unused))unsigned int line_number)
+void f_push(stack_t **stack, __attribute__ ((unused))unsigned int line_number)
 {
 	stack_t *top;
 	(void)line_number;
@@ -29,7 +29,7 @@ void _push(stack_t **stack, __attribute__ ((unused))unsigned int line_number)
  * @stack: pointer to linked list stack
  * @line_number: number of line opcode occurs on
  */
-void _pall(stack_t **stack, __attribute__ ((unused))unsigned int line_number)
+void f_pall(stack_t **stack, __attribute__ ((unused))unsigned int line_number)
 {
 	stack_t *runner;
 
@@ -47,7 +47,7 @@ void _pall(stack_t **stack, __attribute__ ((unused))unsigned int line_number)
  * @line_number: number of line opcode occurs on
  *
  */
-void _pint(stack_t **stack, unsigned int line_number)
+void f_pint(stack_t **stack, unsigned int line_number)
 {
 	stack_t *runner;
 
@@ -66,7 +66,7 @@ void _pint(stack_t **stack, unsigned int line_number)
  *@line_number: integer
  *Return: void
  */
-void _pop(stack_t **stack, unsigned int line_number)
+void f_pop(stack_t **stack, unsigned int line_number)
 {
 	stack_t *nodo = *stack;
 

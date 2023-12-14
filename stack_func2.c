@@ -5,7 +5,7 @@
  * @line_number: number of line opcode occurs on
  */
 
-void _swap(stack_t **stack, unsigned int line_number)
+void f_swap(stack_t **stack, unsigned int line_number)
 {
 	stack_t *runner;
 	int tmp;
@@ -27,7 +27,7 @@ void _swap(stack_t **stack, unsigned int line_number)
  * @line_number: number of line opcode occurs on
  */
 
-void _add(stack_t **stack, unsigned int line_number)
+void f_add(stack_t **stack, unsigned int line_number)
 {
 	stack_t *tmp = *stack;
 	int sum = 0, i = 0;
@@ -61,7 +61,7 @@ void _add(stack_t **stack, unsigned int line_number)
  * @line_number: number of line opcode occurs on
  */
 
-void _nop(__attribute__ ((unused))stack_t **stack,
+void f_nop(__attribute__ ((unused))stack_t **stack,
 		__attribute__ ((unused)) unsigned int line_number)
 {
 	;
@@ -73,7 +73,7 @@ void _nop(__attribute__ ((unused))stack_t **stack,
  * @line_number: the index of the current line
  *
  */
-void _pchar(stack_t **stack, unsigned int line_number)
+void f_pchar(stack_t **stack, unsigned int line_number)
 {
 	int val;
 
